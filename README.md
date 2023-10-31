@@ -70,7 +70,10 @@ We will modify `views.py`.
 To query the database, Django ORM is used. Our model has property called objects (an entry point to start  querying the database). 
 
 #### Creating a Template
+Create a folder templates(to store html files), add it to `TEMPLATES` in `settings.py`.
 
+#### Forms
+To create and update, we need fomrs. Create a forms.py in listings directory.
 
 ## Reference 
 -  https://justdjango.com/courses/django-crash-course/listing-app-and-model 
