@@ -73,7 +73,7 @@ To query the database, Django ORM is used. Our model has property called objects
 Create a folder templates(to store html files), add it to `TEMPLATES` in `settings.py`.
 
 #### Forms
-To create and update, we need forms. Create a forms.py in listings directory.
+To create and update, we need forms. Create a forms.py in listings directory. Update and delete are comparitively easier functions.
 
 ## Reference 
 -  https://justdjango.com/courses/django-crash-course/listing-app-and-model 
