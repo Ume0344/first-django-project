@@ -12,6 +12,7 @@ def listing_list(request):
     }
     return render(request, "listings.html", context)
 
+
 def listing_retrieve(request, pk):
     listing = Listing.objects.get(id=pk)
 
@@ -19,6 +20,7 @@ def listing_retrieve(request, pk):
         "listing": listing
     }
     return render(request, "listing.html", context)
+
 
 def listing_create(request):
     form = ListingForm()
@@ -34,3 +36,21 @@ def listing_create(request):
         "form": form
     }
     return render(request, "listing_create.html", context)
+
+
+def listing_update(request, pk):
+    listing = Listing.objects.get(id=pk)
+    # Instance tells form  to update the existing listing.
+    form = ListingForm(instance=listing)
+
+    if request.method == "POST":
+        form = ListingForm(request.POST, instance=listing)
+        if form.is_valid():
+            form.save()
+            return redirect("/")
+
+    context = {
+        "form": form
+    }
+    
+    return render(request, "listing_update.html", context)

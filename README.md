@@ -18,7 +18,7 @@ pip install django
 ```
 Create a Django project.
 ```
-django-admin startproject ecommerce
+django-admin startproject realstate
 ```
 It will create following files;
 - wsgi.py - A standard for how Python applications and servers should conform to.
@@ -73,7 +73,7 @@ To query the database, Django ORM is used. Our model has property called objects
 Create a folder templates(to store html files), add it to `TEMPLATES` in `settings.py`.
 
 #### Forms
-To create and update, we need fomrs. Create a forms.py in listings directory.
+To create and update, we need forms. Create a forms.py in listings directory.
 
 ## Reference 
 -  https://justdjango.com/courses/django-crash-course/listing-app-and-model 

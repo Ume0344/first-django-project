@@ -22,5 +22,6 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path("", listing_list),
     path("listings/<pk>/", listing_retrieve),
-    path("listings/", listing_create)
+    path("listings/<pk>/edit", listing_update),
+    path("listings/", listing_create),
 ]
