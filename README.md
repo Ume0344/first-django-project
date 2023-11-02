@@ -75,5 +75,8 @@ Create a folder templates(to store html files), add it to `TEMPLATES` in `settin
 #### Forms
 To create and update, we need forms. Create a forms.py in listings directory. Update and delete are comparitively easier functions.
 
+### Tailwind CSS
+A CSS framework to build any design directly in html. Update the  html  files to add design.
+
 ## Reference 
 -  https://justdjango.com/courses/django-crash-course/listing-app-and-model 
