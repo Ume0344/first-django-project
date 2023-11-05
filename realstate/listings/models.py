@@ -7,6 +7,8 @@ class Listing(models.Model):
     total_rooms = models.IntegerField()
     location = models.CharField(max_length=100)
     size = models.IntegerField()
+    image = models.ImageField()
+    
 
     def __str__(self):
         return self.title

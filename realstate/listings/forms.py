@@ -11,4 +11,5 @@ class ListingForm(forms.ModelForm):
             "total_rooms",
             "location",
             "size",
+            "image",
         ]

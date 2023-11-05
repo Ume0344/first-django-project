@@ -78,5 +78,14 @@ To create and update, we need forms. Create a forms.py in listings directory. Up
 ### Tailwind CSS
 A CSS framework to build any design directly in html. Update the  html  files to add design.
 
+#### Images
+We need `Pillow` for django to work with images. Install it;
+```
+pip install pillow
+```
+To see installed package;
+```
+pip freeze > requirements.txt
+```
 ## Reference 
 -  https://justdjango.com/courses/django-crash-course/listing-app-and-model 
